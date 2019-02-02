@@ -59,7 +59,7 @@ class Updatetodo(APIView):
 
             todoserializer = TodoSerializer(data=request.POST)
             if todoserializer.is_valid(raise_exception=True):
-                TodoDetails.objects.filter(id=todo_id).update(state=state, due_date=due_date, text=text)
+                TodoDetails.objects.get(id=todo_id).update(state=state, due_date=due_date, text=text)
                 return Response({'code': 200, 'message': "success"})
         except Exception as e:
             return Response({'code': 400, 'message': str(e)})
