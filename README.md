@@ -1,7 +1,7 @@
 # todo
 
 
-####Creating a Todo : 
+####Creating a Todo :#### 
     url : /todo/create/
     request type : POST
     Input parameters:
@@ -17,7 +17,7 @@
     }
     In case of failue code and message will be different.
     
-####Updating a Todo : 
+####Updating a Todo :#### 
     url : todo/update/
     request type: POST
     Input parameters:
@@ -34,7 +34,7 @@
     }
     In case of failue code and message will be different.
     
-####Get All Todos
+####Get All Todos ####
     url : todo/getall/?orderby=both
     request type: GET
     Input parameters:
@@ -57,7 +57,7 @@
     }
     In case of failue code and message will be different.
     
-####Delete a todo:
+####Delete a todo: ####
     url : todo/delete/
     request type: POST
     Input parameters:
